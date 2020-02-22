@@ -1,0 +1,177 @@
+.cards
+    @include card(15px)
+    .three-dot
+        i
+            @include card-ellipsis(10px, 6px)
+            font-size: 13px
+        &:hover
+            .popup-dropdown
+                display: block
+                top: 30px
+    &:hover
+        box-shadow: $shadow-2
+        transition: box-shadow 0.2s ease-in-out
+        cursor: pointer
+        .fa-ellipsis-v, .fa-ellipsis-h
+            visibility: visible 
+    .fa-ellipsis-v, .fa-ellipsis-h
+        visibility: hidden
+        transition: 0.1s ease-in 
+
+.card-1
+    i
+        @include card-ellipsis(7px, 12px)
+        color: #707070
+    h4
+        width: 85%
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+.card-body
+    padding: 0px
+    p
+        font-size: 12px
+        text-overflow: ellipsis
+        overflow: hidden
+        width: 100%
+        -webkit-line-clamp: 2
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        margin: 12px 0px 0px 0px
+.card-foot
+    .right
+        font-size: 12px
+        text-align: right
+        display: grid
+        color: $light-gray
+    .avatarlist
+        width: 40%
+        display: inline-block
+        ul
+            margin-bottom: 0px
+    p
+        margin: 12px 0px
+.card-foot2
+    .profile-icon
+        font-size: 10px
+        line-height: 29px
+        font-family: $primary-regular
+    .right
+        width: 60%
+
+//connection-card
+
+.custom-card
+    display: flex
+    flex-wrap: wrap
+.custom-cards
+    @include card(30px)
+    text-align: center
+    width: 150px
+    height: 150px
+    margin-right: 20px
+    &:hover
+        box-shadow: $shadow-3
+        transition: box-shadow 0.3s ease-in-out
+        cursor: pointer
+    img
+        width: 90px
+        height: 90px
+.card-3
+    display: inline-flex
+    width: 100%
+    p, h4
+        margin: 0px
+    .connection-database
+        position: absolute
+        bottom: 10px
+        right: 15px
+        display: flex
+        align-items: center     
+        svg
+            margin-right: 4px  
+    .popup-dropdown
+        right: 0px
+        top: 30px
+        color: $black
+    .card-text
+        margin-left: 15px
+    .card-date
+        @include absolute(81px, 10px)
+        font-size: 14px
+        color: $gray
+.large-avatar
+    @include avatar(50px)
+    img
+        width: 100%
+        border-radius: 50%        
+.card-4
+    .card-head
+        display: flex
+        h4
+            display: inline
+            margin-left: 10px
+            width: 49%
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+    .card-body
+        i
+            color: $gray
+            font-size: 16px
+        .xxxs-font
+            padding-right: 5px
+        margin-bottom: 12px
+    .card-foot
+        svg
+            position: absolute
+            right: 31px
+            top: 11px
+        i
+            @include card-ellipsis(5px, 5px)
+            position: absolute
+            right: 5px
+            top: 5px
+            @include avatar(25px)
+            line-height: 24px
+            font-size: 16px
+            &:hover
+                background-color: $border-gray
+                box-shadow: $shadow-1
+                transition: all 0.1s 
+    .card-checkbox
+        position: absolute
+        top: -6px
+        right: 8px
+        .checkbox-container
+            padding-left: 0px
+            .checkmark
+                left: 0px
+.column_info
+    position: relative
+    &:hover
+        .column_info_card
+            display: block
+    .column_info_card
+        display: none
+        position: absolute !important
+        right: 0
+        min-width: 596px
+        min-height: 208px
+        text-align: left
+        @include card(25px)
+        border-radius: 2px
+        z-index: 99
+        box-shadow: $shadow-4
+        h4
+            display: inline
+        span
+            width: 25%
+            float: left
+        ul
+            list-style: none
+            padding: 0
+            font-size: 14px
+            margin: 0px
+            li
+                margin-top: 20px

@@ -1,0 +1,308 @@
+.modal-backdrop 
+    opacity: 0 !important
+.close
+    svg
+        .a
+            fill: $black
+.popup-card
+    padding: 25px
+    background-color: $white
+    p
+        display: inline-block
+    form
+        max-height: 300px
+        overflow-x: hidden
+        padding-top: 13px
+        textarea
+            resize: none
+            outline: none
+.modal-header
+    padding: 25px 25px 0px 25px
+    border: none
+.modal-body
+    padding: 0px
+    overflow: auto
+.modal-footer
+    padding: 0px 25px 25px 25px
+    border: none
+.custom-modal
+    .modal-dialog 
+        max-width: 90%    
+.modal-content
+    box-shadow: $shadow-3
+    max-height: 90vh
+    border: 1px solid $border-gray
+    border-radius: 4px
+
+//form-pg3
+
+.select-label
+    margin-top: -22px    
+//form-pg3
+
+.addadmin-avatar
+    @include avatar(23px)
+    border: 1px dashed $primary-color
+    display: inline-block
+.added-team
+    background-color: $border-gray
+    width: 100%
+    max-height: 87px
+    border-radius: 3px
+    padding: 7px
+    overflow-x: hidden
+    overflow-y: auto
+    margin-bottom: 17px
+    .col-sm-2
+        padding-right: 0px !important
+        padding-left: 14px !important
+.team
+    margin-bottom: 2px
+    p
+        width: 98%
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+        font-size: 10px
+        font-family: $primary-medium
+        color: $light-gray
+        margin: auto
+    svg
+        .a 
+            fill: $alert
+            fill-rule: evenodd
+        position: absolute
+        background: $white
+        right: 32px
+        top: 0px
+        background-color: white
+.xs-avatar
+    @include avatar(12px)
+    background-color: $primary-color
+    font-size: $xxxs
+    color: white
+    font-family: intermedium
+    line-height: 12px
+.searchbox
+    width: 98%
+    border: none
+    border-bottom: 1px solid $border-gray
+    margin-bottom: 15px
+    outline: none
+.profile-suggestions
+    position: relative
+    .searchicon    
+        position: absolute
+        right: 10px
+        svg
+            .a 
+                fill: #a1a1a1
+.profile-details
+    display: flex
+    line-height: 16px
+    margin-bottom: 15px
+    p, a
+        margin: auto
+        display: block
+        margin-left: 10px
+    a
+        font-size: 10px
+.sm-avatar
+    @include avatar(25px)
+    border: 1px solid $primary-color
+    color: $primary-color
+    font-size: 12px
+    font-family: $primary-medium
+    line-height: 23px
+    margin-left: 20px
+.check-avatar
+    @include avatar(25px)
+    line-height: 24px
+    margin-left: 20px
+    color: $white
+    background-color: $success
+    i
+        font-size: 12px
+
+//connections
+
+.connect-status
+    margin-left: 25px
+
+//import
+
+.import-modal
+    width: 100%
+    padding: 60px
+    background-color: $body-color
+    border: 2px dashed $primary-color
+    text-align: center
+    p
+        font-family: $primary-semibold
+        display: block
+        margin: auto
+    
+//product details
+
+.custom-modal_2
+    .modal-dialog 
+        .modal-body   
+            overflow: hidden
+            h4
+                display: inline-block
+                svg
+                    margin-right: 5px
+            p
+                margin: 0px 0px 0px 3px
+                line-height: 26px
+            h6
+                display: inline-block
+            .modal-tools
+                display: inline
+                .close
+                    font-size: 1.2rem
+            .search
+                position: relative
+                margin-right: -41px
+                .searchbox
+                    margin-bottom: 0px
+                    border-bottom: none
+                    background-color: $border-gray
+                    border-radius: 4px
+                    padding: 0px 20px
+                    width: 75%
+                .searchicon
+                    position: absolute
+                    left: 3px
+                    top: 1px
+            .product_data_details
+                margin: -5px 0px 0px 19px
+            table
+                tbody
+                    height: calc(100vh - 310px)
+                    border: none
+                thead
+                    border-bottom: 0.3px solid $border-gray
+                th
+                    p
+                        font-size: 12px
+                        font-weight: 500
+                        line-height: 26px
+                        margin: 0px
+                        display: block
+            form
+                padding: 0px 0px 10px 0px
+                select 
+                    width: 15%
+        .modal-header
+            i
+                font-size: 16px
+                line-height: 24px
+                margin-left: 10px
+.row_option
+    position: relative
+    .popup-dropdown
+        left: 0
+        right: unset
+    &:hover
+        .popup-dropdown
+            display: block
+.insert_row-dropdown, .find_replace-dropdown
+    position: relative
+    &:hover
+        .popup-dropdown
+            display: block
+    .sub-dropdown, .popup-dropdown
+        padding: 10px
+        min-width: 315px
+        h4
+            display: inline-block
+        button
+            margin-top: 20px
+        .num-input
+            width: 20%
+            margin-top: 20px
+    &:hover
+        .sub-dropdown
+            display: block
+            color: $black
+.find_replace-dropdown
+    .find_btn
+        width: 100%
+    p
+        margin:0 !important
+    button
+        float: right
+        margin-left: 10px
+
+//edit-read table
+
+.scheme_table
+    ::placeholder 
+        color: $black
+        opacity: 1
+    .text-box
+        border-bottom: none !important
+    select
+        color: $black !important
+        border-bottom: none !important
+        -webkit-appearance: none
+.scheme_table_edit
+    ::placeholder 
+        color: $gray
+        opacity: 1
+    .text-box
+        border-bottom: 1px solid #ECECEC !important
+    select
+        color: #9D9C9F 
+        width: 60%
+        border-bottom: 1px solid #ECECEC !important
+        -webkit-appearance: menulist !important
+
+#exampleModalCenter_productdetails
+    .modal-dialog 
+        .modal-body 
+            .create-table 
+                td 
+                    .checkmark
+                        top: 3px
+                        left: 20px
+                .primary-button
+                    line-height: 0.8
+
+#exampleModalCenter_create_db
+    svg
+        margin-right: 5px
+    form
+        .label1
+            width: 45%
+            margin-bottom: 0px
+//export
+
+#exampleModalCenter_export
+    .modal-dialog 
+        max-width: 30%
+        label 
+            margin-right: 30px
+        .export_details
+            display: flex
+            margin-top: 15px
+            .span_1
+                width: 30%
+            .span_2
+                width: 4%
+            .span_3
+                width: 60%
+
+//save-delete
+
+#exampleModalCenter_un_save, #exampleModalCenter_row_del, #exampleModalCenter_row_del_single, #exampleModalCenter_update, #exampleModalCenter_del_db
+    .modal-dialog 
+        max-width: 30%
+        .popup-card
+            padding: 10px 25px
+            text-align: center
+        .modal-header
+            justify-content: center
+        .modal-footer
+            justify-content: center

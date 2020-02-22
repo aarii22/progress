@@ -1,0 +1,100 @@
+table
+    font-family: $primary-regular
+    text-align: left
+    width: 100%
+    tbody
+        width: 100%
+        display: block
+        overflow: auto
+        height: calc(100vh - 220px)
+        border: 0.3px solid $border-gray
+    thead, tbody tr
+        display: table
+        width: 100%
+        table-layout: fixed
+    thead
+        border-left: 4px solid transparent
+        th
+            font-size: $xs
+            color: $gray
+            padding: 10px 3px       
+    tbody
+        tr
+            border-left: 4px solid transparent
+            background-color: $white
+            border-bottom: 0.3px solid $border-gray
+            border-top: 0.3px solid transparent
+            &:hover
+                box-shadow: $shadow-1
+                cursor: pointer
+            td
+                font-size: $xs
+                color: $black
+                padding: 10px 3px
+                i
+                    margin-left: 5px
+                    color: $icon-gray
+                    font-size: 15px
+                    cursor: pointer
+    label
+        font-size: $xs
+    i
+        margin-left: 5px
+        color: $primary-color
+        font-size: 12px
+        cursor: pointer 
+    .checkbox-container
+        padding-left: 26px
+    .checkmark
+        left: 7px
+        top: 2px
+    .increment-checkbox
+        .checkmark
+            left: 45px
+
+//modal
+
+.create-table 
+    table
+        border: 0.5px solid $border-gray
+        width: 100%
+    th
+        font-size: $s
+        color: $black
+        padding: 10px 3px
+    tbody
+        width: 100%
+        display: block
+        overflow: auto
+        height: calc(100vh - 371px)
+        border-right: none
+        td
+            .text-box
+                border: none
+                border-bottom: 1px solid $border-gray
+                width: 100%
+            select
+                border: none
+                border-bottom: 1px solid $border-gray
+                font-size: 12px
+                color: #C7C7C7
+                outline: none
+                padding: 1px 0px
+            .checkmark
+                top: -7px 
+    thead, tbody tr
+        display: table
+        width: 100%
+        table-layout: fixed
+    form
+        .label1
+            margin-bottom: 15px
+
+//table views
+
+.table_view-1, .column_view-1
+    .checkmark
+        display: none
+.column_view-2
+    .last-td, .last-th
+        display: none

@@ -1,0 +1,45 @@
+.accordian
+    height: calc(100vh - 177px)
+    overflow: auto
+    li, span, label
+        font-size: 14px
+        font-family: $primary-medium
+    ul
+        list-style: none
+    label
+        cursor: pointer
+        span
+            display: flex
+            align-items: center
+        i
+            color: $gray
+            font-size: 12px
+            padding: 0px 8px
+            transform: rotate(-90deg)
+    .cd-accordian
+        padding: 0px
+    .cd-accordian_item_sub
+        display: none
+        svg
+            margin-right: 5px
+    .cd-accordian_input
+        display: none
+        &:checked
+            + label
+                color: $primary-color
+                i
+                    transform: rotate(0deg)
+                    color: $primary-color
+                svg
+                    .a
+                        fill: $primary-color
+            ~ .cd-accordian_item_sub
+                display: block     
+    .cd-accordian_item_sub_final
+        li
+            font-size: 12px          
+.m-avatar
+    @include avatar(25px)
+    img
+        width: 100%
+        border-radius: 50%

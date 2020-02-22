@@ -1,0 +1,75 @@
+.operation_dropdown
+    background-color: $white
+    border-radius: 2px
+    max-width: 275px
+    .operation_header
+        background-color: $primary-color
+        border-radius: 5px
+        padding: 8px 15px
+        .right
+            svg
+                transform: rotate(90deg)
+        p
+            margin: 0
+            display: inline-block
+        .checkmark
+            top: 9px
+            left: 0px
+            border: none
+            border-radius: 2px
+        .search
+            position: relative
+            margin-left: 20px
+            .searchbox
+                background: transparent
+                border-bottom: 1px solid $white
+                width: 75%
+                padding-left: 15px
+                color: $white
+                margin: 0px
+                &::placeholder
+                    color: $white
+                    opacity: 1
+            .searchicon
+                position: absolute
+                left: 0
+                top: 2px
+                svg
+                    margin: 0px
+    .operation_list
+        width: 95%
+        margin: auto
+        display: flex
+        padding: 8px 8px
+        .checkmark
+            top: 2px
+            left: 0px
+            border-radius: 2px
+        border-bottom: 1px solid $border-gray
+        p
+            margin: 0px
+        .prod_name
+            width: 50%
+            p
+                margin: 0px 0px 0px 20px
+        .prod_type
+            width: 20%
+        .prod_key
+            width: 20%
+            i
+                transform: rotate(45deg)
+        .prod_radio
+            width: 10%
+            .radio-checkmark
+                top: 0px
+    .operation_mode
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding: 8px 15px
+        label
+            margin: 0px
+        h6
+            margin: 0
+            display: inline-block
+            margin-right: 5px

@@ -1,0 +1,74 @@
+.popup-dropdown
+    position: absolute
+    padding: 0px
+    background-color: $white
+    z-index: 99
+    width: 150px
+    right: 0px
+    border: 1px solid $border-gray
+    display: none
+    cursor: pointer
+    border-radius: 3px
+    box-shadow: $shadow-4
+    line-height: 16px
+    list-style: none
+    text-align: left
+    li
+        padding: 5px 10px
+        margin-left: 0px !important
+        float: none !important
+        font-size: 14px
+        font-family: $primary-regular
+        &:hover
+            color: $white 
+            background-color: $primary-color 
+
+.sub-dropdown
+    position: absolute
+    padding: 0px
+    background-color: $white
+    z-index: 99
+    width: 150px
+    top: 0px
+    left: 148px
+    border: 1px solid $border-gray
+    display: none
+    cursor: pointer
+    border-radius: 3px
+    box-shadow: $shadow-4
+    line-height: 16px
+    list-style: none
+    li
+        padding: 5px 9px
+        margin-left: 0px !important
+        float: none !important
+
+//dropdown
+
+.filter-dropdown
+    position: relative
+    &:hover
+        .popup-dropdown
+            display: block
+.sort-dropdown
+    position: relative
+    &:hover
+        .popup-dropdown
+            display: block
+.sub-li
+    position: relative
+    span
+        position: absolute
+        right: 0px
+        i
+            line-height: 19px !important
+            color: $gray !important
+            font-size: 14px
+    &:hover
+        span
+            i
+                transform: rotate(-180deg)
+                color: $white !important
+        .sub-dropdown
+            display: block
+            color: $black 

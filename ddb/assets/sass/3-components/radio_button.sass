@@ -1,0 +1,41 @@
+.radio 
+    display: inline
+    position: relative
+    padding-left: 25px
+    cursor: pointer
+    font-size: 16px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+.radio input 
+    position: absolute
+    opacity: 0
+    cursor: pointer
+
+.radio-checkmark 
+    position: absolute
+    top: 2px
+    left: 0
+    height: 18px
+    width: 18px
+    border-radius: 50%
+    border: 1px solid $primary-color 
+
+.radio input:checked ~ .radio-checkmark:after
+    background-color: $primary-color 
+    display: inline-block
+
+.radio-checkmark:after 
+    content: ""
+    position: absolute
+    display: none
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    top: 5px
+    left: 5px 
+
+.radio input:checked ~ .radio-checkmark:after 
+    display: block

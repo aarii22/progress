@@ -1,0 +1,83 @@
+.query-editor
+    .query-head
+        h4
+            margin-bottom: 15px
+            display: inline
+        .sidnav-btn
+            position: absolute
+            right: 15px
+    .tools
+        position: unset
+    .cards
+        display: flex
+        width: 96%
+        margin: 5px auto
+        padding: 12px 0px
+        position: relative
+        border-radius: 4px
+        &:hover
+            box-shadow: $shadow-1
+        .card-break
+            margin-left: 26px
+        p
+            margin: 0
+        div
+            margin-right: 12px
+        label
+            padding: 7px 18px
+        .query-check
+            display: flex
+            align-items: center
+        .icon-avatar
+            @include avatar(20px)
+            background-color: $border-gray
+            margin: auto
+            line-height: 13px
+            position: absolute
+            right: 10px
+            top: 22px
+            i
+                font-size: $xxxs
+    .editor
+        min-height: 320px
+    .result-tab
+        position: relative
+        .tools
+            position: absolute
+            top: 4px
+            right: 4px
+    .close-svg
+        position: absolute
+        right: 15px
+        top: 0px
+        fill: $primary-color
+    .col-lg-9, .col-lg-3
+        padding-right: 0px 
+    .col-lg-3
+        padding-left: 25px 
+    .query-tab
+        position: relative
+.list-tab
+    .tools
+        margin-right: 12px
+.bundle-dropdown
+    position: relative
+    &:hover
+        .popup-dropdown
+            display: block
+.query-popup
+    p
+        display: block
+        margin: auto
+    span
+        margin-left: 20px
+    select
+        border: none
+        border-bottom: 1px solid $border-gray
+        color: $gray
+        padding-right: 80%
+        font-size: 12px
+        outline: none
+    .checkmark
+        top: 7px
+        left: -18px

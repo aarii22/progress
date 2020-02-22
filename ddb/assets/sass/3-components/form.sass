@@ -1,0 +1,103 @@
+form
+    .label1
+        font-family: $primary-regular
+        position: relative
+        margin-bottom: 33px
+        span
+            font-size: 10px
+        .input-error
+            border-bottom: 1px solid $alert !important
+        .input-success
+            border-bottom: 1px solid $success !important
+        .text-box
+            width: 100%
+            border: 0
+            border-bottom: 1px solid $border-gray 
+            outline: none  
+            font-size: 14px       
+        .label2
+            position: absolute
+            bottom: 23px
+            left: 0px 
+            transition: all 0.2s
+            font-size: 14px
+            margin: auto
+        i
+            position: absolute
+            right: 1px
+            bottom: 10px
+    select
+        border: none
+        border-bottom: 1px solid $border-gray
+        padding-right: 35px
+        font-size: 14px
+        color: $gray
+        outline: none  
+    textarea
+        height: 110px
+        border-radius: 5px
+        border: 1px solid $border-gray
+        width: 100%
+        color: $icon-gray
+label
+    font-size: 14px
+    font-family: $primary-regular
+.date-box
+    display: inline
+    font-size: 12px
+    color: $icon-gray
+    position: relative
+    i
+        position: absolute
+        right: 1px
+        top: 0px
+    .date
+        border: none
+        border-bottom: 1px solid $border-gray
+        outline: none
+        width: 57%
+        &::-webkit-datetime-edit 
+            padding: 1px
+        &::-webkit-inner-spin-button 
+            display: none
+        &::-webkit-calendar-picker-indicator 
+            display: none
+.form-pg2
+    select
+        margin-bottom: 6px
+//login-form
+
+.login-2
+    .label3
+        position: relative
+        margin-bottom: 30px
+        .text-box
+            width: 100%
+            padding: 5px 0px 
+            border: 0
+            border-bottom: 1px solid $border-gray 
+            &:focus 
+                outline: none
+                ~ .label4
+                    position: absolute
+                    bottom: 25px
+                    left: 0px 
+        .label4
+            position: absolute
+            bottom: 4px
+            left: 0px 
+            color: $light-gray
+            transition: all 0.2s
+.password-icon
+    position: absolute
+    right: 30px
+    top: 6px    
+
+//connections
+
+.credentials
+    .label1
+        i
+            font-size: $s
+            color: $primary-color
+

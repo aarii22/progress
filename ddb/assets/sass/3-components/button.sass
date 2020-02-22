@@ -1,0 +1,16 @@
+.primary-button
+    @include btn-prop($primary-color, $white)
+.warning-button
+    @include btn-prop($alert, $white)
+    border: 1px solid $alert
+.secondary-button
+    @include btn-prop($white, $primary-color)
+.sidnav-btn
+    background-color: $white
+    padding: 0px 5px
+    border-radius: 4px
+    cursor: pointer
+.primary-button, .secondary-button
+    .disabled
+        opacity: 0.5
+        cursor: not-allowed

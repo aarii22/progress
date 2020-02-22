@@ -1,0 +1,125 @@
+.tabs
+    position: relative
+    display: inline-block
+    width: 100%
+    input
+        &:checked 
+            + .tab_name
+                color: $black
+                border-bottom: 2px solid $primary-color
+    .tab
+        position: relative
+.tabs > input:first-child:checked ~  .tab > .content:first-child,
+.tabs > input:nth-child(3):checked ~  .tab > .content:nth-child(2),
+.tabs > input:nth-child(5):checked ~  .tab > .content:nth-child(3),
+.tabs > input:nth-child(7):checked ~  .tab > .content:nth-child(4)
+    display: block
+.content
+    margin-top: 10px
+    display: none
+.checkboxtab
+    display: none
+.tabs
+    .tab_name
+        color: $light-gray
+        font-family: $primary-medium
+        font-size: $m
+        margin-right: 40px
+        cursor: pointer
+        &:hover
+            color: $primary-color
+.checkboxtab
+    &:checked 
+        ~ .content
+            z-index: 1
+
+//query tab
+
+.query-editor
+    .tabs
+        .tab_name
+            color: $icon-gray
+            font-family: $primary-medium
+            font-size: $s
+            margin: 0px -3px 0px 0px
+            cursor: pointer
+            background-color: $border-gray
+            border-radius: 5px 5px 0px 0px
+            padding: 7px 25px
+            line-height: 1
+            &:hover
+                color: $primary-color
+        input
+            &:checked 
+                + .tab_name
+                    color: $white
+                    background-color: $primary-color
+                    border-bottom: none
+                    
+        .content
+            background-color: $white
+            position: absolute
+            width: 100%
+            top: 20px
+            height: 77vh
+            overflow: auto
+            label
+                background-color: $white
+    .result-tab    
+        .tabs
+            .content
+                top: -8px
+                height: 26vh
+
+//table-query
+
+.table_query
+    .tabs
+        .tab
+            position: unset
+        .tab_name
+            color: $icon-gray
+            background: $white
+            font-family: $primary-medium
+            font-size: $s
+            margin-right: 2px
+            cursor: pointer
+            border-radius: 2px
+            padding: 7px 15px
+            line-height: 1
+            display: inline-flex
+            svg
+                margin: 0px 5px 0px 0px
+                .a
+                    fill: #707070
+                    
+        input
+            &:checked 
+                + .tab_name
+                    color: $white
+                    border-bottom: none
+                    background: $primary-color
+                    svg
+                        .a
+                            fill: $white
+    .query-editor
+        .tabs
+            .tab_name
+                color: $icon-gray
+                font-family: $primary-medium
+                font-size: $s
+                margin: 0px -3px 0px 0px
+                cursor: pointer
+                background-color: $border-gray
+                border-radius: 5px 5px 0px 0px
+                padding: 7px 25px
+                line-height: 1
+                &:hover
+                    color: $primary-color
+            input
+                &:checked 
+                    + .tab_name
+                        color: $white
+                        background-color: $primary-color
+                        border-bottom: none
+

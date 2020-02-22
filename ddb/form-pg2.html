@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Workspace
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="tools">
+            <button data-toggle="modal" data-target="#exampleModalCenter" class="primary-button">+ Add Project</button>
+        </div>
+
+        <!--bootstrap modal-->
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered form-pg2" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title primary-semibold" id="exampleModalLongTitle">Project Creation</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 6 6">
+                                <defs>
+                                </defs>
+                                <path class="a"
+                                    d="M3.713,3,5.853.86A.5.5,0,1,0,5.139.147L3,2.286.861.147A.5.5,0,0,0,.148.86L2.287,3,.148,5.139a.5.5,0,0,0,.713.713L3,3.713,5.139,5.852a.5.5,0,1,0,.713-.713Z"
+                                    transform="translate(0 0)" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="popup-card">
+                            <div class="form-progress">
+                                <div class="row bs-wizard" style="border-bottom:0;">
+
+                                    <div class="col-md-4 bs-wizard-step complete">
+                                        <div class="text-center bs-wizard-stepnum">Step 1</div>
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="bs-wizard-dot"><i class="fas fa-check"></i></div>
+                                    </div>
+
+                                    <div class="col-md-4 bs-wizard-step disabled">
+                                        <div class="text-center bs-wizard-stepnum">Step 2</div>
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="bs-wizard-dot"><i class="fas fa-check"></i></div>
+                                    </div>
+
+                                    <div class="col-md-4 bs-wizard-step disabled">
+                                        <div class="text-center bs-wizard-stepnum">Step 3</div>
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="bs-wizard-dot"><i class="fas fa-check"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Target Industry</label>
+                                        <label>Target Audience</label>
+                                        <label>Departments Involved</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select>
+                                            <option>Options</option>
+                                            <option>Options</option>
+                                        </select>
+                                        <select>
+                                            <option>Options</option>
+                                            <option>Options</option>
+                                        </select><br>
+                                        <select>
+                                            <option>Options</option>
+                                            <option>Options</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+
+                                    </div>
+                                </div>
+                                <p class="primary-medium">Subject Areas</p>
+                                <textarea></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="primary-button">Previous</button>
+                        <button type="button" class="primary-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
